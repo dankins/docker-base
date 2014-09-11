@@ -1,13 +1,15 @@
 # VERSION               0.0.1
 # BUILD-USING:        docker build -t base .
-# PUSH-USING:         docker tag base quay.io/queue/base  && docker push quay.io/queue/base
+# PUSH-USING:         docker tag base surf/base  && docker push surf/base
 
 FROM     ubuntu:14.04
 MAINTAINER Dan Kinsley <dan@queuenetwork.com>
 
 RUN apt-get update && apt-get install -y \
         curl \ 
-        unzip 
+        unzip \
+	software-properties-common \
+	python-software-properties
 
 # perhaps we should install something for logging? logstache/pipestache etc?
 
