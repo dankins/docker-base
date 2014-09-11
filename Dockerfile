@@ -1,6 +1,6 @@
 # VERSION               0.0.1
-# BUILD-USING:        docker build -t base .
-# PUSH-USING:         docker tag base surf/base  && docker push surf/base
+# BUILD-USING:        docker build -t docker-base .
+# PUSH-USING:         docker tag base surf/docker-base  && docker push surf/docker-base
 
 FROM     ubuntu:14.04
 MAINTAINER Dan Kinsley <dan@queuenetwork.com>
